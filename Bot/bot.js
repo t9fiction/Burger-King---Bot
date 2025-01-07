@@ -5,7 +5,7 @@ const bot = new Telegraf(TOKEN);
 const web_link = "https://burger-king-bot.vercel.app/";
 
 bot.start((ctx) =>
-  ctx.reply("Welcome :)))))", {
+  ctx.reply("Welcome :) ", {
     reply_markup: {
       keyboard: [[{ text: "web app", web_app: { url: web_link } }]],
     },
